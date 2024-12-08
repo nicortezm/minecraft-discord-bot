@@ -53,7 +53,7 @@ client.on('messageCreate', async (message) => {
           const mcCommand = args.slice(2).join(' ');
           // const cmdResult = await sendMinecraftCommand(mcCommand);
           // message.reply(cmdResult);
-          message.reply(mcCommand);
+          message.reply(`${mcCommand}: Comando no implementado`);
         } else {
           message.reply('Por favor, proporciona un comando de Minecraft');
         }
