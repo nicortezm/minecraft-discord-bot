@@ -1,0 +1,29 @@
+{
+  "name": "minecraft-discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/ssh2": "^1.15.1",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@azure/arm-compute": "^22.1.0",
+    "@azure/identity": "^4.5.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "env-var": "^7.5.0",
+    "ssh2": "^1.16.0"
+  }
+}
