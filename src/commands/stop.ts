@@ -64,11 +64,9 @@ export async function stopCommand(
         });
     });
 
-    // Paso 2: Esperar 20 segundos
-    onMessage('⏳ Esperando 20 segundos para apagar la máquina virtual...');
-    await new Promise((resolve) => setTimeout(resolve, 20000));
-
+    
     // Paso 3: Apagar la máquina virtual en Azure
+    onMessage('⏳ Apagando la máquina virtual...');
     const credential = new DefaultAzureCredential();
     const computeClient = new ComputeManagementClient(
       credential,
